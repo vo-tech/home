@@ -1,0 +1,10 @@
+{
+  "name": "votech-4.0",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd kross-hugo/exampleSite && ../bin/hugo --gc --minify --baseURL /",
+    "vercel-build": "mkdir -p bin && curl -L https://github.com/gohugoio/hugo/releases/download/v0.125.4/hugo_extended_0.125.4_Linux-64bit.tar.gz | tar xz -C bin hugo && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
